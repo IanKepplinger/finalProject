@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html encoding='UTF8'>
+
+<head>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .header {
+            text-align: center;
+            background: #a519ff;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header bg-gradient p-3">
+    <h3 class="display-3">Build Your Resume</h3>
+    <p>Created by Ian Kepplinger</p>
+    <p>WEB-115.0003</p>
+</div>
+<br>
+<div id="form" class="container shadow p-5 m-5 bg-white rounded mx-auto">
+    <form>
+
+        <h4 class="p1">Contact Info</h4>
+
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="fullName">Full name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="John Smith">
+            </div>
+            <div class="col-4 px-3">
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" placeholder="Los Angeles">
+            </div>
+            <div class="col-4 px-3">
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state" size="2" placeholder="CA">
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="zip">ZIP Code:</label><br>
+                <input type="text" id="zip" name="zip">
+            </div>
+            <div class="col-4 px-3">
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="someone@gmail.com">
+            </div>
+        </div>
+
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="linkedin">LinkedIn URL:</label><br>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+            <div class="col-4 px-3">
+                <label for="twitter">Twitter Handle:</label><br>
+                <input type="text" id="twitter" name="twitter" placeholder="@someone">
+            </div>
+        </div>
+        <br>
+        <h4 class="p1">About You</h4>
+
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+                <label for="summary">Provide a brief summary about yourself:</label><br>
+                <textarea class="form-control" id="summary" name="summary"></textarea>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+            <label for="workEthic">Decribe your work ethic:</label><br>
+            <textarea class="form-control" id="workEthic" name="workEthic"></textarea>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+                <label for="certs"></label>Enter any acquired certifications:<br>
+                <textarea class="form-control" id="certs" name="certs"></textarea>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+                <label for="coding">Enter any programming languages you are proficient in:</label><br>
+                <textarea class="form-control" id="coding" name="coding"></textarea>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+                <label for="frameworks">Enter any frameworks you are proficient in:</label><br>
+                <textarea class="form-control" id="frameworks" name="frameworks"></textarea>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+                <label for="edu">Enter educational background:</label><br>
+                <textarea class="form-control" id="edu" name="edu"></textarea>
+            </div>
+        </div>
+        <br>
+        <h4>Enter previous work experience:</h4>
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="workStart1">Start Date:</label><br>
+                <input type="date" id="workStart1" name="workStart1">
+            </div>
+            <div class="col-4 px-3">
+                <label for="workEnd1">End Date:</label><br>
+                <input type="date" id="workEnd1" name="workEnd1">
+            </div>
+        </div>
+
+        <div class="row px-3 py-1">
+            <div class="col-8 px-3">
+                <label for="workDetails1">Details:</label><br>
+                <textarea class="form-control" id="workDetails1" name="workDetails1"></textarea>
+            </div>
+        </div>
+        <br>
+        <h5>(Optional) Enter additional experience:</h5>
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="workStart2">Start Date:</label><br>
+                <input type="date" id="workStart2" name="workStart2"><br><br>
+            </div>
+            <div class="col-4 px-3">
+                <label for="workEnd2">End Date:</label><br>
+                <input type="date" id="workEnd2" name="workEnd2"><br><br>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-8 px-3">
+                <label for="workDetails2">Details:</label><br>
+                <textarea class="form-control" id="workDetails2" name="workDetails2"></textarea><br><br>
+            </div>
+        </div>
+        <h5>(Optional) Enter additional experience:</h5>
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="workStart3">Start Date:</label><br>
+                <input type="date" id="workStart3" name="workStart3"><br><br>
+            </div>
+            <div class="col-4 px-3">
+                <label for="workEnd">End Date:</label><br>
+                <input type="date" id="workEnd3" name="workEnd3"><br><br>
+            </div>
+        </div>
+
+        <div class="row px-3 py-1">
+            <div class="col-8 px-3">
+                <label for="workDetails3">Details:</label><br>
+                <textarea class="form-control" id="workDetails3" name="workDetails3"></textarea><br><br>
+            </div>
+        </div>
+        <h4>References</h4>
+
+        <div class="row px-3 py-1">
+            <div class="col-4 px-3">
+                <label for="reference">Enter any references:</label><br>
+                <textarea class="form-control" id="reference" name="reference"></textarea><br><br>
+            </div>
+        </div>
+        <div class="row px-3 py-1">
+            <div class="col-12 px-3">
+                <button id="create">Create Resume</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script src="projectJS.js"></script>
+</html>
